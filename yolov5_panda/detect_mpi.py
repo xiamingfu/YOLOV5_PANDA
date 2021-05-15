@@ -423,7 +423,7 @@ if __name__ == '__main__':
 
     opt = parser.parse_args()
     print(opt)
-    check_requirements(exclude=('pycocotools', 'thop'))
+#     check_requirements(exclude=('pycocotools', 'thop'))
 
     comm = MPI.COMM_WORLD
     size = comm.Get_size()
