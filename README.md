@@ -58,5 +58,6 @@ mpirun -np 2 python split_det.py
 cd $SOTS/yolov5_panda
 python train.py --device 0,1 --batch-size 48
 ```
-
+### Reference
+https://github.com/ultralytics/yolov5
 
