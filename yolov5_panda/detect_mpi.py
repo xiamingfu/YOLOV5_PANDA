@@ -431,8 +431,7 @@ if __name__ == '__main__':
     if rank == 0:
         opt.device = "0"
         opt.gpus = opt.device
-        opt.source = '../tcdata/panda_round2_train_20210331_part21/10_Huaqiangbei'
-        #opt.source = '../../tcdata/panda_round2_train_20210331_part22/10_Huaqiangbei'
+        opt.source = '../tcdata/panda_round2_train_20210331_part10/10_Huaqiangbei'
         # opt.source = '../tcdata/panda_round2_test_20210331_B_part1/14_Ceremony'
 
         with torch.no_grad():
@@ -446,7 +445,6 @@ if __name__ == '__main__':
         opt.device = "1"
         opt.gpus = opt.device
         #opt.source = '../tcdata/panda_round2_test_20210331_A_part2/12_Nanshan_i_Park'
-        #opt.source = '../../tcdata/panda_round2_train_20210331_part22/07_University_Campus'
         opt.source = '../tcdata/panda_round2_test_20210331_B_part2/15_Dongmen_Street'
         with torch.no_grad():
             if opt.update:  # update all models (to fix SourceChangeWarning)
