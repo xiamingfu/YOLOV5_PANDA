@@ -493,7 +493,7 @@ if __name__ == '__main__':
     set_logging(opt.global_rank)
     if opt.global_rank in [-1, 0]:
         check_git_status()
-        check_requirements()
+#         check_requirements()
 
     # Resume
     wandb_run = check_wandb_resume(opt)
