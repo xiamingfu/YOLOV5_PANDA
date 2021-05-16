@@ -7,7 +7,7 @@ import shutil
 import json
 import argparse
 
-#历遍文件夹
+# Traverse folders
 def findfile(path, ret,file_state):
     filelist = os.listdir(path)
     for filename in filelist:
@@ -109,7 +109,7 @@ def split_img(img, p_label, v_label, output_size_list=[], over_lap=0.3,save_path
 
 
 
-#创建新的目录
+# create new directory
 def dir_make(path):
     if not os.path.exists(path):
         os.mkdir(path)
