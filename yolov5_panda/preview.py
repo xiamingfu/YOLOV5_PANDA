@@ -178,7 +178,7 @@ def detect(save_img=False):
 
     print(f'Done. ({time.time() - t0:.3f}s)')
 
-#历遍文件夹
+# Traverse folders
 def findfile(path, ret,file_state):
     filelist = os.listdir(path)
     for filename in filelist:
